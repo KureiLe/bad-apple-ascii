@@ -9,8 +9,9 @@ for x in files:
     f.append(f_i)
     f_i += 1
 
+os.system('cls')
+
 for x in f:
     file = open(f'ascii/{x}.txt')
-    print(file.read())
-    time.sleep(0.05)
-    os.system('cls')
+    print(file.read(), end='\r')
+    time.sleep(0.0625)

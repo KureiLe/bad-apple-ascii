@@ -21,7 +21,7 @@ for x in file_list:
 
     # Make Ascii
     pixels = image.getdata()
-    chars = ["B", "S", "#", "&", "@", "$", "%", "*", "!", ":", "."]
+    chars = [".", ".", ".", ".", ".", ".", "%", "%", "%", "%", "%"]
     ascii_str = ''
     for x in pixels:
         ascii_str += chars[x//25]
