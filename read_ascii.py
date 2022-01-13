@@ -1,5 +1,8 @@
 import time
 import os
+import shutil
+
+columns = shutil.get_terminal_size().columns
 
 files = os.listdir('ascii')
 
@@ -13,5 +16,5 @@ os.system('cls')
 
 for x in f:
     file = open(f'ascii/{x}.txt')
-    print(file.read(), end='\r')
-    time.sleep(0.0625)
+    print(file.read().center(columns), end='\r')
+    time.sleep(1/40)
