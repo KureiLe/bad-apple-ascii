@@ -1,4 +1,10 @@
 import cv2
+import os
+
+try:
+    os.mkdir("./frames")
+except OSError:
+    print("Couldn't create 'frames' folder in %s ", os.getcwd())
 
 video_name = 'video.mp4'
 capture_frame_every = 1
