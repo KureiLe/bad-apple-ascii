@@ -1,7 +1,7 @@
 bad apple video to ascii
 
 ## Requirements
-- pip install opencv-python
+- pip install -r requirements.txt
 
 ## How to use
 - Run extract_frames.py

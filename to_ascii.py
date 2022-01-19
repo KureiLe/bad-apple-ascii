@@ -2,6 +2,11 @@ import PIL.Image
 import os
 import time
 
+try:
+    os.mkdir("./ascii")
+except OSError:
+    print("Couldn't create 'ascii' folder in %s ", os.getcwd())
+
 file_list = sorted(os.listdir('frames'))
 
 for x in file_list:
